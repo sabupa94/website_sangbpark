@@ -1,40 +1,125 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [My Personal Website](https://www.sangbpark.com)
+
+This is the source code for my personal website built using Next.js. The website uses Next.js' file-based page routing system for navigation.
+
+## Prerequisites
+
+Ensure you have the following installed on your machine:
+
+- Node.js (LTS version recommended)
+- npm or yarn
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to set up and run the project locally.
+
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/sabupa94/website_sangbpark.git
+cd website_sangbpark
+```
+
+### 2. Install Dependencies
+
+Navigate to the project directory and install the necessary dependencies:
+
+```bash
+npm install
+```
+
+Or, if you prefer using yarn:
+
+```bash
+yarn install
+```
+
+### 3. Run the Development Server
+
+Start the development server to see the website in action:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Or, with yarn:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Open [http://localhost:3000](https://localhost:3000) in your browser to view the website.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 4. Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To create an optimized production build, run:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Or, with yarn:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+yarn build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 5. Start the Production Server
 
-## Deploy on Vercel
+After building the project, you can start the production server with:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Or, with yarn:
+
+```bash
+yarn start
+```
+
+### 6. Project Structure
+
+Here is a brief overview of the project structure:
+
+```
+my-personal-website/
+├── src/                    # Contains the main files for the site
+├────── pages/              # Contains the page components
+│       ├── index.tsx       # Home page
+├────── styles/             # CSS styles
+├── public/                 # Static assets
+├── package.json            # Project metadata and scripts
+```
+
+### 7. Customizing the Website
+
+You can customize the content and styles of the website by editing the files in the src/pages and src/styles directories. Each file in the pages directory corresponds to a route in your application.
+
+### 8. Deployment
+
+To deploy the website, you can use platforms like Vercel, Netlify, or any other static site hosting service. Here is a basic example of deploying to Vercel:
+
+Install the Vercel CLI:
+
+```bash
+npm install -g vercel
+```
+
+Deploy the site:
+
+```bash
+vercel
+```
+
+Follow the prompts to deploy the website (although it's my site...)
+
+## Contributing
+
+If you would like to contribute to the project (though I don't understand why you would), please fork the repository and create a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/sabupa94/website_sangbpark/blob/main/LICENSE) file for details.
